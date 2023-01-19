@@ -1,5 +1,4 @@
 $myVMS = Get-VM | Where-Object {$_.Name -cnotlike "vCLS-*"} | Sort-Object Name
-$advancedSetting = ""
 
 Write-Host -NoNewline "Number of virtual machines: "
 Write-Host -ForegroundColor Yellow $myVMS.Length
